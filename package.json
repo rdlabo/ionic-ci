@@ -1,0 +1,28 @@
+{
+  "name": "ionic-ci",
+  "version": "0.0.1",
+  "description": "Lighthouse for Ionic starter template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rdlabo/ionic-ci.git"
+  },
+  "keywords": [
+    "Ionic",
+    "Lighthouse",
+    "Measurement"
+  ],
+  "author": "Masahiko Sakakibara",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rdlabo/ionic-ci/issues"
+  },
+  "homepage": "https://github.com/rdlabo/ionic-ci#readme",
+  "dependencies": {
+    "ionic": "^5.4.10",
+    "lighthouse": "^5.6.0"
+  }
+}
