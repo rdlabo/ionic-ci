@@ -28,7 +28,7 @@
   "homepage": "https://github.com/rdlabo/ionic-ci#readme",
   "dependencies": {
     "@lhci/cli": "^0.3.6",
-    "ionic": "^5.4.10",
+    "ionic": "latest",
     "lighthouse": "^5.6.0"
   }
 }
