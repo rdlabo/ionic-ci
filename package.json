@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "description": "Lighthouse for Ionic starter template",
   "scripts": {
-    "angular-blank": "npm run create-angular-blank && npm run lh-angular-blank",
-    "angular-tabs": "npm run create-angular-tabs && npm run lh-angular-tabs",
+    "build-all": "npm run build-angular-blank && npm run build-angular-tabs",
+    "build-angular-blank": "npm run create-angular-blank && npm run lh-angular-blank",
+    "build-angular-tabs": "npm run create-angular-tabs && npm run lh-angular-tabs",
     "create-angular-blank": "rm -rf angular/blank && ionic start angular/blank blank --type=angular && cd angular-blank && npx ng build --prod",
     "lh-angular-blank": "lhci collect --staticDistDir=angular-blank/www --config=./lighthouserc.json",
     "create-angular-tabs": "rm -rf angular/tabs && ionic start angular/tabs tabs --type=angular && cd angular-tabs && npx ng build --prod",
