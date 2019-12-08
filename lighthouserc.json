@@ -1,0 +1,12 @@
+{
+  "ci": {
+    "collect": {
+      "numberOfRuns": 1,
+      "preset": "lighthouse:recommended",
+      "settings": {
+        "throttling-method": "simulate",
+        "emulated-form-factor": "mobile"
+      }
+    }
+  }
+}
