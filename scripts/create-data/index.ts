@@ -6,26 +6,28 @@ const records = [
   'angular-tabs'
 ];
 const auditsType = [
+  "speed-index",
   "first-contentful-paint",
   "first-meaningful-paint",
   "load-fast-enough-for-pwa",
-  "speed-index",
   "estimated-input-latency",
-  "total-blocking-time",
   "max-potential-fid",
   "time-to-first-byte",
   "first-cpu-idle",
   "interactive",
   "mainthread-work-breakdown",
   "bootup-time",
-  "network-requests",
   "network-rtt",
   "network-server-latency",
-  "main-thread-tasks",
   "metrics",
+
   "total-byte-weight",
-  "render-blocking-resources",
+  "network-requests",
   "dom-size",
+
+  "render-blocking-resources",
+  "total-blocking-time",
+  "main-thread-tasks",
 
   // mainthread-work-breakdown
   "scriptEvaluation",

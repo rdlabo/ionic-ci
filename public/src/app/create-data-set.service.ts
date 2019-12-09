@@ -7,8 +7,8 @@ import recordData from './../../../records/data.json';
 export class CreateDataSetService {
   private recordsGroup = [
     [
-      "first-meaningful-paint",
       "speed-index",
+      "first-meaningful-paint",
       "interactive",
       "first-cpu-idle",
       // "mainthread-work-breakdown",
@@ -50,18 +50,18 @@ export class CreateDataSetService {
     const label = [];
     const dataSet = [];
     const backgroundColors = [
-      'rgba(255, 99, 132, 0.2)',
-      'rgba(54, 162, 235, 0.2)',
-      'rgba(255, 206, 86, 0.2)',
-      'rgba(75, 192, 192, 0.2)',
-      'rgba(153, 102, 255, 0.2)',
-      'rgba(255, 159, 64, 0.2)',
-      'rgba(255, 99, 132, 0.2)',
-      'rgba(54, 162, 235, 0.2)',
-      'rgba(255, 206, 86, 0.2)',
-      'rgba(75, 192, 192, 0.2)',
-      'rgba(153, 102, 255, 0.2)',
-      'rgba(255, 159, 64, 0.2)',
+      'rgba(255, 99, 132, 0.1)',
+      'rgba(54, 162, 235, 0.1)',
+      'rgba(255, 206, 86, 0.1)',
+      'rgba(75, 192, 192, 0)',
+      'rgba(153, 102, 255, 0)',
+      'rgba(255, 159, 64, 0)',
+      'rgba(255, 99, 132, 0)',
+      'rgba(54, 162, 235, 0)',
+      'rgba(255, 206, 86, 0)',
+      'rgba(75, 192, 192, 0)',
+      'rgba(153, 102, 255, 0)',
+      'rgba(255, 159, 64, 0)',
     ];
     const borderColors = [
       'rgba(255, 99, 132, 1)',
@@ -86,9 +86,6 @@ export class CreateDataSetService {
       }
       const data = [];
       if (selected.hasOwnProperty(key)) {
-        // ここでSort
-
-
         for(let i in selected[key]) {
           if (selected[key].hasOwnProperty(i)) {
             const packageName = selected[key][i].package.split('@');

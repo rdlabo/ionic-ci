@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
       yAxes: [
         {
           ticks: {
-            beginAtZero: true,
+            false: true,
           },
         },
       ],
