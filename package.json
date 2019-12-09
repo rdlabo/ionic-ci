@@ -14,7 +14,8 @@
     "react-sidemenu": "npm run ci react sidemenu",
     "react-tabs": "npm run ci react tabs",
     "react-conf": "npm run ci react conference",
-    "ci": "ts-node -P scripts/tsconfig.json scripts/index.ts"
+    "ci": "ts-node -P scripts/tsconfig.json scripts/measurement/index.ts",
+    "output": "ts-node -P scripts/tsconfig.json scripts/create-data/index.ts"
   },
   "repository": {
     "type": "git",

@@ -21,19 +21,31 @@
         repository: <a href="https://github.com/rdlabo/ionic-ci">rdlabo/ionic-ci</a>. Thanks.
       </p>
     </div>
-    <ion-segment [(ngModel)]="type">
-      <ion-segment-button value="angular">Angular</ion-segment-button>
-      <ion-segment-button disabled="">React</ion-segment-button>
-    </ion-segment>
 
-    <ion-segment class="ion-margin-top" [(ngModel)]="template">
-      <ion-segment-button>blank</ion-segment-button>
-      <ion-segment-button>sidemenu</ion-segment-button>
-      <ion-segment-button>tabs</ion-segment-button>
-      <ion-segment-button>conderence</ion-segment-button>
-    </ion-segment>
+    <ion-toolbar>
+      <ion-segment [(ngModel)]="type" mode="ios">
+        <ion-segment-button value="angular">Angular</ion-segment-button>
+        <ion-segment-button disabled="">React</ion-segment-button>
+      </ion-segment>
+
+      <ion-segment [(ngModel)]="template" mode="ios">
+        <ion-segment-button value="blank">blank</ion-segment-button>
+        <ion-segment-button value="sidemenu">sidemenu</ion-segment-button>
+        <ion-segment-button value="tabs">tabs</ion-segment-button>
+        <ion-segment-button value="conference">conderence</ion-segment-button>
+      </ion-segment>
+    </ion-toolbar>
     <section class="ion-padding">
-      <app-chart [data]="data" [options]="options"></app-chart>
+      <h2>Time</h2>
+      <app-chart [data]="graph1" [options]="options"></app-chart>
+    </section>
+    <section class="ion-padding">
+      <h2>Byte</h2>
+      <app-chart [data]="graph2" [options]="options"></app-chart>
+    </section>
+    <section class="ion-padding">
+      <h2>Delay</h2>
+      <app-chart [data]="graph3" [options]="options"></app-chart>
     </section>
   </ion-content>
 </ion-app>
