@@ -8,6 +8,9 @@ import { Platform } from '@ionic/angular';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
+  type: 'angular' | 'react' | 'vue' = 'angular';
+  template: 'blank' | 'sidemenu' | 'tabs' | 'conference' = 'conference';
+
   data = {
     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
     datasets: [

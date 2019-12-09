@@ -26,9 +26,9 @@ export class ChartComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     this.context = this.ref.nativeElement.getContext('2d');
     this.chart = new Chart(this.context, {
-      type: 'doughnut',
+      type: 'line',
       data: this.data,
-      options: this.options,
+      options: this.options
     });
   }
 }
