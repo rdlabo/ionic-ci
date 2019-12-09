@@ -258,5 +258,31 @@
             "render-blocking-resources": 152,
             "dom-size": 31
         }
+    },
+    {
+        "date": "2019-12-09",
+        "time": 1575869823755,
+        "audits": {
+            "first-contentful-paint": 1861.6464999999998,
+            "first-meaningful-paint": 1861.6464999999998,
+            "load-fast-enough-for-pwa": 2131.995,
+            "speed-index": 1861.6464999999998,
+            "estimated-input-latency": 12.8,
+            "total-blocking-time": 47.5,
+            "max-potential-fid": 97.5,
+            "time-to-first-byte": 10.863,
+            "first-cpu-idle": 1861.6464999999998,
+            "interactive": 2131.995,
+            "mainthread-work-breakdown": 755.092,
+            "bootup-time": 460.20399999999995,
+            "network-requests": 12,
+            "network-rtt": 0.07200000000000006,
+            "network-server-latency": 1.899,
+            "main-thread-tasks": 8,
+            "metrics": 2131.995,
+            "total-byte-weight": 144889,
+            "render-blocking-resources": 152,
+            "dom-size": 31
+        }
     }
 ]
