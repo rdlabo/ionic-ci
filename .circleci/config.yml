@@ -1,15 +1,15 @@
-# Javascript Node CircleCI 2.0 configuration file
 version: 2
-
-defaults: &defaults
-  working_directory: ~/repo
-  docker:
-    - image: circleci/node:12.13.1
-  branches:
-    only:
-      - master
 jobs:
   build:
+    docker:
+      - image: circleci/node:12.13.1
+
+    branches:
+      only:
+        - master
+
+    working_directory: ~/repo
+
     steps:
       - checkout
       - restore_cache:
