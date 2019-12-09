@@ -1,15 +1,12 @@
 version: 2
 jobs:
-  build:
+  lighthouse:
+    working_directory: ~/workspace
     docker:
       - image: circleci/node:12.13-browsers
-
     branches:
       only:
         - master
-
-    working_directory: ~/repo
-
     steps:
       - checkout
       - restore_cache:
@@ -34,6 +31,9 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 workflows:
   version: 2
+  normal_workflow:
+    jobs:
+      - lighthouse
   schedule_workflow:
     triggers:
       - schedule:
@@ -43,4 +43,4 @@ workflows:
               only:
                 - master
     jobs:
-      - build
+      - lighthouse
