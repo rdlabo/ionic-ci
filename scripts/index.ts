@@ -26,8 +26,6 @@ function createIonicProject(typeName, templateName, directoryName): string {
   // check version
   const packageJson = JSON.parse(fs.readFileSync('./' + directoryName + '/node_modules/@ionic/' + typeName + '/package.json', 'utf8'));
   return packageJson['_id']
-    .replace( '/', '-' )
-    .replace(/\./g, '-');
 }
 
 function getRecord(typeName, directoryName): Record<string, number> {
@@ -89,8 +87,9 @@ function ci() {
   const today = new Date();
   records.push({
     date: today.getFullYear() + '-' + ("0" + (today.getMonth() + 1)).slice(-2) + '-' + ("0" + today.getDate()).slice(-2),
+    package: packageName,
+    audits: recordMap,
     time: today.getTime(),
-    audits: recordMap
   });
   fs.writeFileSync(recordsFile, JSON.stringify(records, null, 4));
 }
