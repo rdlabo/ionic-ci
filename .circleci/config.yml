@@ -4,9 +4,6 @@ jobs:
     working_directory: ~/workspace
     docker:
       - image: circleci/node:12.13-browsers
-    branches:
-      only:
-        - master
     steps:
       - checkout
       - restore_cache:
