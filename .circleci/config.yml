@@ -26,6 +26,7 @@ jobs:
       - run: git add ./
       - run: git commit -m 'record(lighthouse):daily cron'
       - run: git push origin master
+      - run: npm run output
 
       - save_cache:
           paths:
