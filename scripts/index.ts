@@ -77,7 +77,7 @@ function ci() {
     fs.mkdirSync('./records/' + DIRECTORY);
   }
 
-  const recordsFile = './records/' + DIRECTORY + '/' + packageName + '.json';
+  const recordsFile = './records/' + DIRECTORY + '/' + packageName.replace('/', '-') + '.json';
   let records;
   if (fs.existsSync(recordsFile) ) {
     records = JSON.parse(fs.readFileSync(recordsFile, 'utf8'));
