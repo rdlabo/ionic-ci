@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.graph1 = this.dataService.create(0, this.type, this.template);
     this.graph2 = this.dataService.create(1, this.type, this.template);
-    this.graph3 = this.dataService.create(1, this.type, this.template);
+    this.graph3 = this.dataService.create(2, this.type, this.template);
     // console.log(this.data);
   }
 }

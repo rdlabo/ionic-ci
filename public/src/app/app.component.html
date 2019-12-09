@@ -14,7 +14,7 @@
   </ion-header>
 
   <ion-content>
-    <div class="ion-padding">
+    <div class="ion-padding description">
       <p>
         Are you interested in quality? This is the result of measuring Ionic's Starter Template with Lighthouse. The
         value used is the median value for each package version. If you want to know how it works, look at the
@@ -23,12 +23,12 @@
     </div>
 
     <ion-toolbar>
-      <ion-segment [(ngModel)]="type" mode="ios">
+      <ion-segment [(ngModel)]="type" mode="ios" (ngModelChange)="ngOnInit()">
         <ion-segment-button value="angular">Angular</ion-segment-button>
         <ion-segment-button disabled="">React</ion-segment-button>
       </ion-segment>
 
-      <ion-segment [(ngModel)]="template" mode="ios">
+      <ion-segment [(ngModel)]="template" mode="ios" (ngModelChange)="ngOnInit()">
         <ion-segment-button value="blank">blank</ion-segment-button>
         <ion-segment-button value="sidemenu">sidemenu</ion-segment-button>
         <ion-segment-button value="tabs">tabs</ion-segment-button>
@@ -36,15 +36,15 @@
       </ion-segment>
     </ion-toolbar>
     <section class="ion-padding">
-      <h2>Time</h2>
+      <h2 class="ion-text-center">Time</h2>
       <app-chart [data]="graph1" [options]="options"></app-chart>
     </section>
     <section class="ion-padding">
-      <h2>Byte</h2>
+      <h2 class="ion-text-center">Byte</h2>
       <app-chart [data]="graph2" [options]="options"></app-chart>
     </section>
     <section class="ion-padding">
-      <h2>Delay</h2>
+      <h2 class="ion-text-center">Delay</h2>
       <app-chart [data]="graph3" [options]="options"></app-chart>
     </section>
   </ion-content>
