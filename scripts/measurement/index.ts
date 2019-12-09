@@ -87,6 +87,7 @@ function ci() {
   const today = new Date();
   records.push({
     date: today.getFullYear() + '-' + ("0" + (today.getMonth() + 1)).slice(-2) + '-' + ("0" + today.getDate()).slice(-2),
+    datetime: today.toISOString(),
     package: packageName,
     audits: recordMap,
     time: today.getTime(),
