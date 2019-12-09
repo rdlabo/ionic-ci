@@ -1,0 +1,29 @@
+# Javascript Node CircleCI 2.0 configuration file
+version: 2
+
+defaults: &defaults
+  working_directory: ~/repo
+  docker:
+    - image: circleci/node:12.13.1
+  branches:
+    only:
+      - master
+jobs:
+  build:
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+      - run: git reset --hard HEAD
+      - run: npm install && npm run build-angular
+      - run: git config user.email "${GITHUB_EMAIL}"
+      - run: git config user.name "${GITHUB_USERNAME}"
+      - run: git add ./
+      - run: git commit -m 'record lighthouse'
+      - run: git push origin master
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}

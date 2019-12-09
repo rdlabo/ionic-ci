@@ -4,8 +4,8 @@
   "description": "Lighthouse for Ionic starter template",
   "scripts": {
     "build-all": "npm run build-angular && npm run build-react",
-    "build-angular": "npm run angular-blank && npm run angular-sidemenu && npm run angular-tabs && npm run build angular-conf",
-    "build-react": "npm run react-blank && npm run react-sidemenu && npm run react-tabs && npm run build react-conf",
+    "build-angular": "npm run angular-blank && npm run angular-sidemenu && npm run angular-tabs && npm run angular-conf",
+    "build-react": "npm run react-blank && npm run react-sidemenu && npm run react-tabs && npm run react-conf",
     "angular-blank": "npm run ci angular blank",
     "angular-sidemenu": "npm run ci angular sidemenu",
     "angular-tabs": "npm run ci angular tabs",
