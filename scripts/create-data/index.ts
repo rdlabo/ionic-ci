@@ -26,6 +26,15 @@ const auditsType = [
   "total-byte-weight",
   "render-blocking-resources",
   "dom-size",
+
+  // mainthread-work-breakdown
+  "scriptEvaluation",
+  "other",
+  "styleLayout",
+  "scriptParseCompile",
+  "paintCompositeRender",
+  "parseHTML",
+  "garbageCollection",
 ];
 const DATA: object[] = [];
 
@@ -57,7 +66,9 @@ function outputData() {
         for (let audit of auditsType) {
           const value = [];
           for (let record of records) {
-            value.push(record.audits[audit]);
+            if (record.audits[audit] || record.audits[audit] === 0) {
+              value.push(record.audits[audit]);
+            }
           }
           tmp.push([type[0], type[1], audit, records[0].package, median(value)]);
         }
@@ -97,7 +108,6 @@ function outputData() {
       audits: d[Object.keys(d)[0]][Object.keys(d[Object.keys(d)[0]])[0]]
     });
   }
-  console.log(writeData);
   fs.writeFileSync('./records/data.json', JSON.stringify(writeData, null, 4));
 }
 

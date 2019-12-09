@@ -49,14 +49,27 @@ function getRecord(typeName, directoryName): Record<string, number> {
   }
   const stats = JSON.parse(fs.readFileSync('./.lighthouseci/' + lhFilePath, 'utf8'));
   const audits: {
-    numericValue? :number;
-  }[] = stats.audits;
-  return Object.entries(audits).reduce((acc, [key, a]) => {
+    [key:string]: {
+      numericValue?: number;
+      details?: {
+        items?: {
+          group?: string;
+          duration?: number;
+        }[]
+      }
+    }
+  } = stats.audits;
+
+  const breakdown = Object.entries(audits['mainthread-work-breakdown'].details.items).reduce((acc, [key, a]) => {
+    return Object.assign({}, acc, {[a.group]: a.duration })
+  }, {});
+
+  return Object.assign(breakdown, Object.entries(audits).reduce((acc, [key, a]) => {
     if (a.numericValue && typeof a.numericValue === 'number') {
       return Object.assign({}, acc, {[key]: a.numericValue })
     }
     return acc
-  }, {});
+  }, {}));
 }
 
 function ci() {
