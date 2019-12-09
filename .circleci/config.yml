@@ -8,7 +8,7 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - v1-dependencies-{{ checksum "package.json" }}
+            - v2-dependencies-{{ checksum "package.json" }}
       - run: git reset --hard HEAD && git pull origin
       - run: npm install
       - run: npm run angular-blank
@@ -24,9 +24,12 @@ jobs:
       - save_cache:
           paths:
             - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
+          key: v2-dependencies-{{ checksum "package.json" }}
 workflows:
   version: 2
+  normal_workflow:
+    jobs:
+    - build
   schedule_workflow:
     triggers:
       - schedule:
