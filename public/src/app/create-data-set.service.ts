@@ -81,14 +81,19 @@ export class CreateDataSetService {
 
     for(let key in selected) {
       if (!this.recordsGroup[num].includes(key)) {
+        // 選択検証データの中に入ってるかを確認
         continue;
       }
       const data = [];
       if (selected.hasOwnProperty(key)) {
+        // ここでSort
+
+
         for(let i in selected[key]) {
           if (selected[key].hasOwnProperty(i)) {
-            if (!label.includes(selected[key][i].package)) {
-              label.push(selected[key][i].package);
+            const packageName = selected[key][i].package.split('@');
+            if (!label.includes(packageName[2])) {
+              label.push(packageName[2]);
             }
             data.push(selected[key][i].value);
           }

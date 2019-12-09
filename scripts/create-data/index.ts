@@ -67,6 +67,18 @@ function outputData() {
       const recordFiles = files.filter((file) => {
         return /.*\.json$/.test(file); //絞り込み
       });
+      recordFiles.sort((a, b) => {
+        const version_a = a.split('@')[2].split('.');
+        const version_b = b.split('@')[2].split('.');
+        if (version_a[0] !== version_b[0]) {
+          return version_a[0] - version_b[0];
+        } else if (version_a[1] !== version_b[1]) {
+          return version_a[1] - version_b[1];
+        } else {
+          return version_a[2] - version_b[2];
+        }
+      });
+
       for (let recordFile of recordFiles) {
         const records = JSON.parse(fs.readFileSync(dir + '/' + recordFile, 'utf8'));
         for (let audit of auditsType) {
