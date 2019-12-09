@@ -1,7 +1,3 @@
-const { spawnSync } = require("child_process");
-const execSync = (commands) => {
-  spawnSync(commands, { stdio: "inherit", shell: true });
-};
 const fs = require('fs');
 const records = [
   'angular-blank',
@@ -31,21 +27,7 @@ const auditsType = [
   "render-blocking-resources",
   "dom-size",
 ];
-
-let DATA: object[] = [];
-const DATA_FORMAT: {
-  labels: string[],
-  datasets: {
-      label: string;
-      data: number[],
-      backgroundColor: string[],
-      borderColor: string[],
-      borderWidth: 1,
-    }[]
-} = {
-  labels: [],
-  datasets: [],
-};
+const DATA: object[] = [];
 
 function median(arr: number[]) {
   const half = (arr.length / 2) | 0;
