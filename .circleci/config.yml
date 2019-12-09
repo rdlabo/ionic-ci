@@ -32,3 +32,19 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
+
+workflows:
+  version: 2
+  normal_workflow:
+    jobs:
+      - build
+  schedule_workflow:
+    triggers:
+      - schedule:
+          cron: "1 11 * * *" # UTCで記述。-9
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - build
