@@ -18,7 +18,7 @@ function createIonicProject(typeName, templateName, directoryName): string {
   execSync('npx ionic start ' + typeName + '/' + templateName + ' ' + templateName + ' --type=' + typeName);
 
   if (typeName === 'angular') {
-    execSync('cd ' + directoryName + '&& npm install @ionic/angular@4.10.3 && npx ng build --prod');
+    execSync('cd ' + directoryName + '&& npm install @ionic/angular@4.11.0 && npx ng build --prod');
   } else if (typeName === 'react') {
     execSync('cd ' + directoryName + '&& npm run build');
   }
@@ -44,7 +44,7 @@ function getRecord(typeName, directoryName): Record<string, number> {
     return /.*\.json$/.test(file); //絞り込み
   });
   if (!lhFilePath) {
-    console.error('do not run lighthouse')
+    console.error('do not run lighthouse');
     return;
   }
   const stats = JSON.parse(fs.readFileSync('./.lighthouseci/' + lhFilePath, 'utf8'));

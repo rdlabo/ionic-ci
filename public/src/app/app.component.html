@@ -22,7 +22,7 @@
       </p>
     </div>
 
-    <ion-toolbar>
+    <ion-toolbar style="position: sticky; top: 0;">
       <ion-segment [(ngModel)]="type" mode="ios" (ngModelChange)="ngOnInit()" slot="start" color="danger">
         <ion-segment-button value="angular">Angular</ion-segment-button>
         <ion-segment-button disabled="">React</ion-segment-button>
