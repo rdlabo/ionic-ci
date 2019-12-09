@@ -39,8 +39,14 @@ const auditsType = [
 const DATA: object[] = [];
 
 function median(arr: number[]) {
+  if (arr.length === 0) {
+    return null;
+  }
+
   const half = (arr.length / 2) | 0;
-  const temp = arr.sort();
+  const temp = arr.sort((a, b) => {
+    return a - b;
+  });
 
   if (temp.length % 2) {
     return temp[half];
