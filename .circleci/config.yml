@@ -36,10 +36,10 @@ workflows:
   schedule_workflow:
     triggers:
       - schedule:
-        cron: "1 11 * * *"
-        filters:
-          branches:
-            only:
-              - master
+          cron: "1 11 * * *"
+          filters:
+            branches:
+              only:
+                - master
     jobs:
       - build
