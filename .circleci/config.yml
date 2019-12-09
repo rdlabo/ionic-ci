@@ -17,7 +17,7 @@ jobs:
             - v1-dependencies-{{ checksum "package.json" }}
       - run: git reset --hard HEAD
       - run: npm install
-        - run: npm run angular-blank
+      - run: npm run angular-blank
 #        - run: npm run angular-sidemenu
 #        - run: npm run angular-tabs
 #        - run: npm run angular-conf
