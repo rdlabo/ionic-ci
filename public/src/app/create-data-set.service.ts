@@ -27,8 +27,6 @@ export class CreateDataSetService {
     ],
     [
       'total-byte-weight',
-      "dom-size",
-      "network-requests",
       // "time-to-first-byte",
       // "network-rtt",
       // "estimated-input-latency",
@@ -37,9 +35,11 @@ export class CreateDataSetService {
       // "metrics",
     ],
     [
-      "total-blocking-time",
-      "main-thread-tasks",
       "render-blocking-resources",
+      // "dom-size",
+      // "network-requests",
+      "total-blocking-time",
+      // "main-thread-tasks",
     ]
   ];
   constructor() { }

@@ -14,26 +14,40 @@ export class AppComponent implements OnInit {
   public graph2: ChartData;
   public graph3: ChartData;
   public graph4: ChartData;
-
-  options = {
-    scales: {
-      yAxes: [
-        {
-          ticks: {
-            false: true,
-          },
-        },
-      ],
-    },
-  };
+  public options1;
+  public options2;
+  public options3;
+  public options4;
 
   constructor(public dataService: CreateDataSetService) {}
 
   ngOnInit() {
     this.graph1 = this.dataService.create(0, this.type, this.template);
+    this.options1 = this.options(2000);
+
     this.graph2 = this.dataService.create(1, this.type, this.template);
+    this.options2 = this.options(0);
+
     this.graph3 = this.dataService.create(2, this.type, this.template);
+    this.options3 = this.options(100000);
+
     this.graph4 = this.dataService.create(3, this.type, this.template);
+    this.options4 = this.options(0);
     // console.log(this.data);
   }
+
+  options(min: number = 0): object {
+    return {
+      scales: {
+        yAxes: [
+          {
+            ticks: {
+              beginAtZero: true,
+              min: min,
+            },
+          },
+        ],
+      },
+    }
+  };
 }

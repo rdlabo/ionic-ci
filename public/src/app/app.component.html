@@ -35,16 +35,24 @@
       </ion-segment>
     </ion-toolbar>
 
-    <section *ngFor="let graph of [graph1, graph2, graph3, graph4]; let i = index">
-      <section class="ion-padding">
-        <h2 class="ion-text-center">
-          <span *ngIf="i === 0">Time</span>
-          <span *ngIf="i === 1">Parse</span>
-          <span *ngIf="i === 2">Byte</span>
-          <span *ngIf="i === 3">Delay</span>
-        </h2>
-        <app-chart [data]="graph" [options]="options"></app-chart>
-      </section>
+    <section class="ion-padding">
+      <h2 class="ion-text-center">Time</h2>
+      <app-chart [data]="graph1" [options]="options1"></app-chart>
+    </section>
+
+    <section class="ion-padding">
+      <h2 class="ion-text-center">Parse</h2>
+      <app-chart [data]="graph2" [options]="options2"></app-chart>
+    </section>
+
+    <section class="ion-padding">
+      <h2 class="ion-text-center">Byte</h2>
+      <app-chart [data]="graph3" [options]="options3"></app-chart>
+    </section>
+
+    <section class="ion-padding">
+      <h2 class="ion-text-center">Delay</h2>
+      <app-chart [data]="graph4" [options]="options4"></app-chart>
     </section>
   </ion-content>
 </ion-app>
