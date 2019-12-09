@@ -16,11 +16,12 @@ function createIonicProject(typeName, templateName, directoryName): string {
   // create project
   execSync('rm -rf ' + typeName + '-' + templateName);
   execSync('npx ionic start ' + typeName + '/' + templateName + ' ' + templateName + ' --type=' + typeName);
-
+  execSync('cd ' + directoryName);
   if (typeName === 'angular') {
-    execSync('cd ' + directoryName + '&& npx ng build --prod');
+    execSync('npm install @ionic/angular@4.10.3');
+    execSync('npx ng build --prod');
   } else if (typeName === 'react') {
-    execSync('cd ' + directoryName + '&& npm run build');
+    execSync('npm run build');
   }
 
   // check version
