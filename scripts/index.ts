@@ -12,31 +12,43 @@ export interface ILighthouse {
   }
 }
 
-function preci(typeName, templateName) {
-  // init
-  execSync('rm -rf ' + typeName + '-' + templateName);
-  execSync('rm -rf .lighthouseci');
-}
-
-function createIonicProject(typeName, templateName): string {
+function createIonicProject(typeName, templateName, directoryName): string {
   // create project
+  execSync('rm -rf ' + typeName + '-' + templateName);
   execSync('npx ionic start ' + typeName + '/' + templateName + ' ' + templateName + ' --type=' + typeName);
-  execSync('cd ' + DIRECTORY + '&& npx ng build --prod');
+
+  if (typeName === 'angular') {
+    execSync('cd ' + directoryName + '&& npx ng build --prod');
+  } else if (typeName === 'react') {
+    execSync('cd ' + directoryName + '&& npm run build');
+  }
 
   // check version
-  const packageJson = JSON.parse(fs.readFileSync('./' + DIRECTORY + '/node_modules/@ionic/' + typeName + '/package.json', 'utf8'));
+  const packageJson = JSON.parse(fs.readFileSync('./' + directoryName + '/node_modules/@ionic/' + typeName + '/package.json', 'utf8'));
   return packageJson['_id']
     .replace( '/', '-' )
     .replace(/\./g, '-');
 }
 
-function getRecord(directoryName): Record<string, number> {
-  execSync('npx lhci collect --staticDistDir=' + directoryName + '/www --config=./lighthouserc.json');
+function getRecord(typeName, directoryName): Record<string, number> {
+  let publicDir;
+  if (typeName === 'angular') {
+    publicDir = 'www';
+  } else if (typeName === 'react') {
+    publicDir = 'build';
+  }
+
+  execSync('rm -rf .lighthouseci');
+  execSync('npx lhci collect --staticDistDir=' + directoryName + '/' + publicDir + ' --config=./lighthouserc.json');
 
   const lhFiles = fs.readdirSync('./.lighthouseci');
   const lhFilePath = lhFiles.find((file) => {
     return /.*\.json$/.test(file); //絞り込み
   });
+  if (!lhFilePath) {
+    console.error('do not run lighthouse')
+    return;
+  }
   const stats = JSON.parse(fs.readFileSync('./.lighthouseci/' + lhFilePath, 'utf8'));
   const audits: {
     numericValue? :number;
@@ -50,7 +62,6 @@ function getRecord(directoryName): Record<string, number> {
 }
 
 function ci() {
-  preci(TYPE, TEMPLATE);
   if (!['angular', 'react'].includes(TYPE)) {
     console.error('error type: ' + TYPE);
     return;
@@ -61,8 +72,8 @@ function ci() {
     return;
   }
 
-  const packageName = createIonicProject(TYPE, TEMPLATE);
-  const recordMap = getRecord(DIRECTORY);
+  const packageName = createIonicProject(TYPE, TEMPLATE, DIRECTORY);
+  const recordMap = getRecord(TYPE, DIRECTORY);
 
   if (!fs.existsSync('./records/' + DIRECTORY) ) {
     fs.mkdirSync('./records/' + DIRECTORY);
