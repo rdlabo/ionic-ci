@@ -16,10 +16,11 @@
   <ion-content>
     <div class="ion-padding">
       <p>
-        Are you interested in quality? This is the result of measuring Ionic's Starter Template with Lighthouse.
-        The value used is the median value for each package version.
-        If you want to know how it works, look at the repository: <a href="https://github.com/rdlabo/ionic-ci">rdlabo/ionic-ci</a>. Thanks.
+        Are you interested in quality? This is the result of measuring Ionic's Starter Template with Lighthouse. The
+        value used is the median value for each package version. If you want to know how it works, look at the
+        repository: <a href="https://github.com/rdlabo/ionic-ci">rdlabo/ionic-ci</a>. Thanks.
       </p>
     </div>
+    <app-chart [data]="data" [options]="options"></app-chart>
   </ion-content>
 </ion-app>

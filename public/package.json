@@ -9,7 +9,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "lint-staged": "lint-staged",
+    "format": "prettier --parser typescript --write \"./**/*.ts\" &&  prettier --parser angular --write \"./**/*.html\""
   },
   "private": true,
   "dependencies": {
@@ -20,6 +22,8 @@
     "@angular/platform-browser-dynamic": "~8.1.2",
     "@angular/router": "^8.2.14",
     "@ionic/angular": "^4.7.1",
+    "@rdlabo/ng-add-formatter": "0.0.21",
+    "chart.js": "^2.9.3",
     "core-js": "^2.5.4",
     "rxjs": "~6.5.1",
     "tslib": "^1.9.0",
@@ -35,6 +39,7 @@
     "@angular/compiler-cli": "~8.1.2",
     "@angular/language-service": "~8.1.2",
     "@ionic/angular-toolkit": "^2.1.1",
+    "@types/chart.js": "^2.9.4",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
@@ -49,7 +54,23 @@
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
-    "typescript": "~3.4.3"
+    "typescript": "~3.4.3",
+    "prettier": "latest",
+    "lint-staged": "latest",
+    "@kaizenplatform/prettier-config": "latest"
   },
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "pre-commit": [
+    "lint-staged"
+  ],
+  "lint-staged": {
+    "*.ts": [
+      "prettier --parser typescript --write",
+      "git add"
+    ],
+    "*.html": [
+      "prettier --parser angular --write",
+      "git add"
+    ]
+  }
 }
