@@ -1,0 +1,54 @@
+[
+    {
+        "date": "2019-11-09",
+        "time": 1575860601558,
+        "audits": {
+            "first-contentful-paint": 2255.6585000000005,
+            "first-meaningful-paint": 2255.6585000000005,
+            "load-fast-enough-for-pwa": 2457.6549999999997,
+            "speed-index": 2255.6585000000005,
+            "estimated-input-latency": 12.8,
+            "total-blocking-time": 66.99649999999997,
+            "max-potential-fid": 280,
+            "time-to-first-byte": 19.842000000000002,
+            "first-cpu-idle": 2255.6585000000005,
+            "interactive": 2457.6549999999997,
+            "mainthread-work-breakdown": 1702.3640000000003,
+            "bootup-time": 420.58,
+            "network-requests": 12,
+            "network-rtt": 0.26400000000000023,
+            "network-server-latency": 7.331,
+            "main-thread-tasks": 6,
+            "metrics": 2457.6549999999997,
+            "total-byte-weight": 144889,
+            "render-blocking-resources": 157,
+            "dom-size": 31
+        }
+    },
+    {
+        "date": "2019-12-09",
+        "time": 1575862656332,
+        "audits": {
+            "first-contentful-paint": 2150.1095,
+            "first-meaningful-paint": 2150.1095,
+            "load-fast-enough-for-pwa": 2357.585,
+            "speed-index": 2150.1095,
+            "estimated-input-latency": 12.8,
+            "total-blocking-time": 121,
+            "max-potential-fid": 171,
+            "time-to-first-byte": 16.675,
+            "first-cpu-idle": 2150.1095,
+            "interactive": 2357.585,
+            "mainthread-work-breakdown": 1339.5160000000005,
+            "bootup-time": 421.7720000000003,
+            "network-requests": 12,
+            "network-rtt": 0.175,
+            "network-server-latency": 2.317,
+            "main-thread-tasks": 6,
+            "metrics": 2357.585,
+            "total-byte-weight": 144889,
+            "render-blocking-resources": 152,
+            "dom-size": 31
+        }
+    }
+]

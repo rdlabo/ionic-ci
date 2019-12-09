@@ -1,8 +1,11 @@
 node_modules/
 angular-blank/
-angullar-sidemenu/
+angular-sidemenu/
 angular-tabs/
+angular-conference/
 react-blank/
 react-sidemenu/
 react-tabs/
+react-conference/
 .lighthouseci/
+!records/*

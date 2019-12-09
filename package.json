@@ -3,9 +3,17 @@
   "version": "0.0.1",
   "description": "Lighthouse for Ionic starter template",
   "scripts": {
-    "build-all": "npm run build-angular-blank && npm run build-angular-tabs",
+    "build-all": "run-p build-angular build-react",
+    "build-angular": "run-p angular-blank angular-sidemenu angular-tabs angular-conf",
+    "build-react": "run-p react-blank react-sidemenu react-tabs react-conf",
     "angular-blank": "npm run ci angular blank",
+    "angular-sidemenu": "npm run ci angular sidemenu",
     "angular-tabs": "npm run ci angular tabs",
+    "angular-conf": "npm run ci angular conference",
+    "react-blank": "npm run ci react blank",
+    "react-sidemenu": "npm run ci react sidemenu",
+    "react-tabs": "npm run ci react tabs",
+    "react-conf": "npm run ci react conference",
     "ci": "ts-node -P scripts/tsconfig.json scripts/index.ts"
   },
   "repository": {
@@ -25,10 +33,10 @@
   "homepage": "https://github.com/rdlabo/ionic-ci#readme",
   "dependencies": {
     "@lhci/cli": "^0.3.6",
-    "ionic": "^5.4.10",
-    "lighthouse": "^5.6.0"
+    "ionic": "^5.4.10"
   },
   "devDependencies": {
+    "npm-run-all": "^4.1.5",
     "ts-node": "^8.5.4",
     "typescript": "^3.7.3"
   }
