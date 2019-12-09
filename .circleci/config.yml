@@ -9,7 +9,7 @@ jobs:
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
-      - run: git reset --hard HEAD
+      - run: git reset --hard HEAD && git pull origin
       - run: npm install
       - run: npm run angular-blank
       - run: npm run angular-sidemenu
