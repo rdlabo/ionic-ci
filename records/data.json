@@ -6,7 +6,7 @@
             "first-contentful-paint": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 3038.2185
+                    "value": 2884.6645
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -16,7 +16,7 @@
             "first-meaningful-paint": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 3038.2185
+                    "value": 2884.6645
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -26,7 +26,7 @@
             "load-fast-enough-for-pwa": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 3038.2185
+                    "value": 2884.6645
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -36,7 +36,7 @@
             "speed-index": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 3041
+                    "value": 2884.5
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -67,7 +67,7 @@
             "time-to-first-byte": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 566.075
+                    "value": 566.2415
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -77,7 +77,7 @@
             "first-cpu-idle": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 3038.2185
+                    "value": 2884.6645
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -87,7 +87,7 @@
             "interactive": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 3038.2185
+                    "value": 2884.6645
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -97,7 +97,7 @@
             "mainthread-work-breakdown": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 796.1649999999997
+                    "value": 675.7129999999999
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -107,7 +107,7 @@
             "bootup-time": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 512.8439999999998
+                    "value": 448.34799999999984
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -127,7 +127,7 @@
             "network-rtt": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 0.1
+                    "value": 0.089
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -137,7 +137,7 @@
             "network-server-latency": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 573.1595
+                    "value": 573.1444999999999
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -147,7 +147,7 @@
             "main-thread-tasks": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 17
+                    "value": 15
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -157,7 +157,7 @@
             "metrics": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 3038.2185
+                    "value": 2884.6645
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -177,7 +177,7 @@
             "render-blocking-resources": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 723.5
+                    "value": 723
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -197,7 +197,7 @@
             "scriptEvaluation": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 528.2504999999999
+                    "value": 453.5574999999999
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -207,7 +207,7 @@
             "other": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 124.61550000000001
+                    "value": 108.91349999999994
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -217,7 +217,7 @@
             "styleLayout": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 55.299
+                    "value": 29.1175
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -227,7 +227,7 @@
             "scriptParseCompile": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 62.90799999999999
+                    "value": 61.515
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -237,7 +237,7 @@
             "paintCompositeRender": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 8.847
+                    "value": 7.846
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -247,7 +247,7 @@
             "parseHTML": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 14.317
+                    "value": 10.774000000000001
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -257,7 +257,7 @@
             "garbageCollection": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 3.856
+                    "value": 2.884
                 }
             ]
         }
@@ -269,7 +269,7 @@
             "first-contentful-paint": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 13437.353500000001
+                    "value": 13423.472
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -279,7 +279,7 @@
             "first-meaningful-paint": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 13437.353500000001
+                    "value": 13423.472
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -299,7 +299,7 @@
             "speed-index": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 13442.5
+                    "value": 13426.5
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -319,7 +319,7 @@
             "total-blocking-time": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 15.974499999999352
+                    "value": 16.321500000000015
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -329,7 +329,7 @@
             "max-potential-fid": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 65.9745
+                    "value": 66.3215
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -339,7 +339,7 @@
             "time-to-first-byte": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 567.9994999999999
+                    "value": 566.3585
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -369,7 +369,7 @@
             "mainthread-work-breakdown": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 1588.0924999999938
+                    "value": 1585.661999999992
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -399,7 +399,7 @@
             "network-rtt": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 0.0745
+                    "value": 0.0795
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -419,7 +419,7 @@
             "main-thread-tasks": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 33.5
+                    "value": 34
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -479,7 +479,7 @@
             "other": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 299.73099999999556
+                    "value": 291.51999999999595
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -489,7 +489,7 @@
             "styleLayout": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 67.17599999999999
+                    "value": 61.0165
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -499,7 +499,7 @@
             "scriptParseCompile": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 103.239
+                    "value": 98.9195
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -519,7 +519,7 @@
             "parseHTML": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 56.36350000000001
+                    "value": 23.272499999999994
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -529,7 +529,7 @@
             "garbageCollection": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 15.755499999999998
+                    "value": 16.743
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -545,7 +545,7 @@
             "first-contentful-paint": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 3966.085
+                    "value": 3943.9465
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -555,7 +555,7 @@
             "first-meaningful-paint": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 3966.085
+                    "value": 3943.9465
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -565,7 +565,7 @@
             "load-fast-enough-for-pwa": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 3966.085
+                    "value": 3943.9465
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -575,7 +575,7 @@
             "speed-index": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 4544.5
+                    "value": 4629
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -596,7 +596,7 @@
             "max-potential-fid": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 19.9925
+                    "value": 25.5885
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -606,7 +606,7 @@
             "time-to-first-byte": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 567.0995
+                    "value": 566.9405
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -616,7 +616,7 @@
             "first-cpu-idle": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 3966.085
+                    "value": 3943.9465
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -626,7 +626,7 @@
             "interactive": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 3966.085
+                    "value": 3943.9465
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -636,7 +636,7 @@
             "mainthread-work-breakdown": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 1186.278499999998
+                    "value": 1050.436999999998
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -646,7 +646,7 @@
             "bootup-time": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 711.4584999999986
+                    "value": 629.8184999999995
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -666,7 +666,7 @@
             "network-rtt": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 0.0695
+                    "value": 0.07
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -676,7 +676,7 @@
             "network-server-latency": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 568.7335
+                    "value": 567.958
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -686,7 +686,7 @@
             "main-thread-tasks": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 32
+                    "value": 29.5
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -696,7 +696,7 @@
             "metrics": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 3966.085
+                    "value": 3943.9465
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -716,7 +716,7 @@
             "render-blocking-resources": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 719
+                    "value": 718
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -736,7 +736,7 @@
             "scriptEvaluation": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 774.1069999999984
+                    "value": 675.9904999999985
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -746,7 +746,7 @@
             "other": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 218.99599999999953
+                    "value": 195.80349999999942
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -756,7 +756,7 @@
             "styleLayout": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 54.269999999999996
+                    "value": 54.545
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -766,7 +766,7 @@
             "scriptParseCompile": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 79.27500000000002
+                    "value": 77.65450000000001
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -776,7 +776,7 @@
             "paintCompositeRender": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 25.50800000000001
+                    "value": 24.6445
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -786,7 +786,7 @@
             "parseHTML": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 19.771500000000003
+                    "value": 15.591500000000002
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -796,7 +796,7 @@
             "garbageCollection": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 14.350999999999999
+                    "value": 13.48
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -812,7 +812,7 @@
             "first-contentful-paint": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 3555.6855
+                    "value": 3521.714
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -822,7 +822,7 @@
             "first-meaningful-paint": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 4283.07
+                    "value": 4217.5935
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -832,7 +832,7 @@
             "load-fast-enough-for-pwa": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 3918.5985
+                    "value": 3521.714
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -842,7 +842,7 @@
             "speed-index": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 4792.5
+                    "value": 4726
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -872,7 +872,7 @@
             "max-potential-fid": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 53.263000000000005
+                    "value": 35.277
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -882,7 +882,7 @@
             "time-to-first-byte": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 565.518
+                    "value": 564.711
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -892,7 +892,7 @@
             "first-cpu-idle": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 4283.07
+                    "value": 4217.5935
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -902,7 +902,7 @@
             "interactive": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 3918.5985
+                    "value": 3521.714
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -912,7 +912,7 @@
             "mainthread-work-breakdown": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 1226.0064999999986
+                    "value": 1087.1364999999973
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -922,7 +922,7 @@
             "bootup-time": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 613.906999999998
+                    "value": 517.2919999999984
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -942,7 +942,7 @@
             "network-rtt": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 0.08299999999999998
+                    "value": 0.08049999999999999
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -952,7 +952,7 @@
             "network-server-latency": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 571.0925
+                    "value": 571.0645
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -962,7 +962,7 @@
             "main-thread-tasks": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 40.5
+                    "value": 31
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -972,7 +972,7 @@
             "metrics": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 3918.5985
+                    "value": 3521.714
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -1012,7 +1012,7 @@
             "scriptEvaluation": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 759.077499999999
+                    "value": 684.8604999999984
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -1022,7 +1022,7 @@
             "other": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 240.7209999999994
+                    "value": 198.1334999999993
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -1032,7 +1032,7 @@
             "styleLayout": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 73.6035
+                    "value": 61.67649999999999
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -1042,7 +1042,7 @@
             "scriptParseCompile": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 82.06000000000003
+                    "value": 71.17500000000001
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -1052,7 +1052,7 @@
             "paintCompositeRender": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 42.80750000000003
+                    "value": 37.59449999999998
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -1062,7 +1062,7 @@
             "parseHTML": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 13.6095
+                    "value": 12.212
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
@@ -1072,7 +1072,7 @@
             "garbageCollection": [
                 {
                     "package": "@ionic/angular@4.10.3",
-                    "value": 14.1275
+                    "value": 11.9955
                 },
                 {
                     "package": "@ionic/angular@4.11.5",
