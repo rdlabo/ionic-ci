@@ -15,12 +15,12 @@ jobs:
       - run: npm run angular-sidemenu
       - run: npm run angular-tabs
       - run: npm run angular-conf
+      - run: npm run output
       - run: git config user.email "${GITHUB_EMAIL}"
       - run: git config user.name "${GITHUB_USERNAME}"
       - run: git add ./
       - run: git commit -m 'record(lighthouse):daily cron'
       - run: git push origin master
-      - run: npm run output
       - save_cache:
           paths:
             - node_modules
