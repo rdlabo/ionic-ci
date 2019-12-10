@@ -4,7 +4,7 @@
       "numberOfRuns": 1,
       "preset": "lighthouse:recommended",
       "settings": {
-        "throttling-method": "devtools",
+        "throttling-method": "simulate",
         "emulated-form-factor": "mobile"
       }
     }

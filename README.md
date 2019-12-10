@@ -17,5 +17,5 @@ https://github.com/rdlabo/ionic-ci/blob/master/records/data.json
 | Environment  |  Key  | Value |
 | ---- | ---- |  ---- |      
 |  CircleCI  |  image  |  circleci/node:12.13-browsers  | 
-|  Lighthouse  |  throttling-method  | devtools  |
+|  Lighthouse  |  throttling-method  | simulate  |
 |  Lighthouse  |  emulated-form-factor  | mobile  | 
